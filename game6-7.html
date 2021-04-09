@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Planet Saver - About</title>
+        <link rel="stylesheet" href="planet.css">
+        <script type="text/javascript" src="home.js"></script>
+    </head>
+    <body onLoad="valUpdated2();">
+        <header>
+            <img class="logo" src="images/logo.png">
+            <h1 class="game-instruction">Choose one, and remember: you have to save the world.</h1>
+        </header>
+        <section class="choices">
+            <label class="choice6">
+                <input type="radio" name="choice" id="choice6"/>
+                <img class="choice6-img" src="images/energy-storage.jpg">
+                <p class="img6-desc">Invest in research to make renewable energy sotrage easier</p>
+            </label>
+            <label class="choice7">
+                <input type="radio" name="choice" id="choice7"/>
+                    <img class="choice7-img" src="images/waste-mng.jpg"/>
+                <p class="img7-desc">Improve waste management policies</p>
+            </label>
+        </section>
+        <section class="next">
+            <button type="button" class="button-next" id="next" onClick="value6or7();">Next</button>
+        </section>
+        <section class="banners">
+            <button id="deforestation" disabled>Deforestation rate: <em id="def-val"></em>%</button>
+            <button id="water-pollution" disabled>Water pollution: <em id="water-val"></em>%</button>
+            <button id="air-pollution" disabled>Air pollution: <em id="air-val"></em>%</button>
+            <button id="co2-emission" disabled>CO<sub>2</sub> emission: <em id="co2-val"></em>%</button>
+            <button id="plastic-pollution" disabled>Plastic pollution: <em id="plastic-val"></em>%</button>
+            <button id="species-extinction" disabled>Species extinction: <em id="species-val"></em>%</button>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Planet Saver - About</title>
+        <link rel="stylesheet" href="planet.css">
+        <script type="text/javascript" src="home.js"></script>
+    </head>
+    <body onLoad="valUpdated4();">
+        <header>
+            <img class="logo" src="images/logo.png">
+            <h1 class="game-results" id="game-results"></h1>
+        </header>
+        <section class="banners-end">
+            <button id="deforestation-end" disabled>Deforestation rate: <em id="def-val"></em>%</button>
+            <button id="water-pollution-end" disabled>Water pollution: <em id="water-val"></em>%</button>
+            <button id="air-pollution-end" disabled>Air pollution: <em id="air-val"></em>%</button>
+            <button id="co2-emission-end" disabled>CO<sub>2</sub> emission: <em id="co2-val"></em>%</button>
+            <button id="plastic-pollution-end" disabled>Plastic pollution: <em id="plastic-val"></em>%</button>
+            <button id="species-extinction-end" disabled>Species extinction: <em id="species-val"></em>%</button>
+        </section>
+        <section class="again">
+            <button type="button" class="button-play-again" id="again" onClick="playAgain();">Play again</button>
+            <button tyupe="button" class="button-back-home" id="home" onClick="backHome();">Back to Home Page</button>
+        </section>
+</html>

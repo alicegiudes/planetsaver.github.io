@@ -1,0 +1,285 @@
+/*styling main tags*/
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'proxima-nova', sans-serif;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 40px; 
+}
+p {
+    font-size: 20px;
+}
+header {
+    background-color: #EBEFF3;
+}
+/*styling navigation bar*/
+.navbar {
+    width: 100%;
+    overflow: auto;
+    background-color: #F6AE2D;
+}
+.navbar a {
+    text-decoration: none;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 33.33%;
+    text-align: center;
+    color: #4A8FE7;
+    border-bottom: 3px solid #F6AE2D;
+    border-top: 3px solid #F6AE2D;
+}
+.navbar a:last-child {
+  border-right: none;
+}
+.navbar a:hover {
+    color: #66A182 !important;
+    background-color: white;
+}
+.navbar a:hover:last-child
+.navbar a:visited {
+    color:#4A8FE7;
+}
+.navbar a:active, .navbar a.active {
+    color:#FFFFFF;
+}
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+/*styling images*/
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 1%;
+}
+.aboutimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+}
+.earth {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+    padding-top: 0.5%;
+}
+/*styling buttons*/
+.button {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.button1 {
+    background-color: #F6AE2D;
+    box-shadow: 2px 5px 0 #D68F0A;
+    color: #EBEFF3;
+    padding: 1% 1.5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 1.5%;
+    border-radius: 5px;
+    border: 2px solid #F6AE2D;
+}
+.button1:hover {
+    background-color: #EBEFF3;
+    color: #F6AE2D;
+    cursor: pointer;
+}
+/*styling first pars*/
+.a1, .r1 {
+    padding-top: 2%;
+}
+.about-par, .how-par {
+    padding-right: 65%;
+    padding-left: 1%;
+    border-left: 3px solid #66A182;
+}
+.padding-left-7 {
+    padding-left: 7%;
+}
+/*styling second pars*/
+.a2, .r2 {
+    text-align: left;
+}
+.padding-left-60{
+    padding-left: 60%;
+    padding-right: 7%;
+} 
+.vision-par, .final-par {
+    text-align: left;
+    padding-left: 2%;
+    border-left: 3px solid #66A182;
+}
+/*styling choice page*/
+.game-instruction, .game-results {
+    background-color: #F6AE2D;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding:15px;
+    color: white;
+    font-weight: lighter;
+}
+/*choices radio buttons*/
+.choices {
+    padding-top: 2%;
+    text-align: center;
+    display: inline-flex;
+    width: 60%;
+    padding-right: 20%;
+    padding-left: 20%;   
+}
+.choice1, .choice2, .choice3, .choice4, .choice5, .choice6,
+.choice7, .choice8, .choice9, .choice10, .choice11, .choice12 {
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+/* hide radio button */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* style images */
+[type=radio] + img {
+    cursor: pointer;
+    width: 90%;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1) grayscale(1) opacity(.7);
+    filter: brightness(1) grayscale(0.5) opacity(.7);
+}
+
+/* style checked image */
+[type=radio]:checked + img {
+    outline: 1px solid black;
+    filter: none;
+}
+/*style next button*/
+.next {
+    text-align: center;
+    padding-top: 1.5%;
+}
+.button-next {
+    background-color: #66A182;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #66A182;
+    cursor: pointer;
+}
+/*style situational baners*/
+.banners {
+    width: 85%;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+}
+#deforestation, #water-pollution, #air-pollution, #plastic-pollution, #species-extinction, #water-deplition {
+    background-color: #F6AE2D;
+    padding: 0.7%;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 0.1%;
+    margin-top: 2.5%;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 black;
+    text-transform: uppercase;
+}
+#co2-emission {
+    background-color: #F6AE2D;
+    padding: 0.5%;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 0.1%;
+    margin-top: 2.5%;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 black;
+    text-transform: uppercase;
+}
+/*style end page*/
+.banners-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 400px;
+    padding-top: 1%;
+}
+#deforestation-end, #water-pollution-end, #air-pollution-end, #plastic-pollution-end, #species-extinction-end, #water-deplition-end {
+    background-color: #F6AE2D;
+    padding: 1.4%;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 0.2%;
+    margin-top: 6%;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 black;
+    text-transform: uppercase;
+    display: block;
+}
+#co2-emission-end {
+    background-color: #F6AE2D;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 0.4%;
+    margin-top: 6%;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 black;
+    text-transform: uppercase;
+    display: block;
+}
+/*style play again and back to home buttons*/
+.again {
+    text-align: center;
+    padding-top: 3%;
+}
+.button-play-again, .button-back-home {
+    background-color: #66A182;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #66A182;
+    cursor: pointer;
+}
